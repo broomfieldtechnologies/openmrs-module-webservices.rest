@@ -17,6 +17,11 @@
 			<version>${project.parent.version}</version>
 		</dependency>
 		<dependency>
+				<groupId>org.openmrs.module</groupId>
+                <artifactId>legacyui-omod</artifactId>
+                <type>jar</type>
+			</dependency>
+		<dependency>
 			<groupId>${project.parent.groupId}</groupId>
 			<artifactId>${project.parent.artifactId}-omod-common</artifactId>
 			<version>${project.parent.version}</version>
@@ -131,6 +136,14 @@
 			<classifier>tests</classifier>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+		<dependency>
+		    <groupId>javax.servlet</groupId>
+		    <artifactId>javax.servlet-api</artifactId>
+		    <version>3.0.1</version>
+		    <scope>provided</scope>
+		</dependency>
+		
 	</dependencies>
 	
 	<build>
