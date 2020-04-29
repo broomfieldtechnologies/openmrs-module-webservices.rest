@@ -44,7 +44,8 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<openmrs.version>1.9.10</openmrs.version>
+		<openmrs.version>2.3.0</openmrs.version>
+		<openmrs.legacyui.version>1.5.0</openmrs.legacyui.version>
 		<java.version>1.6</java.version>
 
 		<MODULE_ID>${project.parent.artifactId}</MODULE_ID>
@@ -93,6 +94,13 @@
 				<scope>test</scope>
 			</dependency>
 			<dependency>
+				<groupId>org.openmrs.module</groupId>
+                <artifactId>legacyui-omod</artifactId>
+                <version>${openmrs.legacyui.version}</version>
+                <type>jar</type>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
 				<groupId>org.openmrs.tools</groupId>
 				<artifactId>openmrs-tools</artifactId>
 				<version>${openmrs.version}</version>
@@ -128,6 +136,14 @@
 				<version>1.9.5</version>
 				<scope>test</scope>
 			</dependency>
+			<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+			<dependency>
+			    <groupId>javax.servlet</groupId>
+			    <artifactId>javax.servlet-api</artifactId>
+			    <version>3.0.1</version>
+			    <scope>provided</scope>
+			</dependency>
+			
 		</dependencies>
 	</dependencyManagement>
 
