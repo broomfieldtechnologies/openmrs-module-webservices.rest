@@ -10,6 +10,7 @@
 package org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_9;
 
 import java.util.Arrays;
+
 import java.util.Collection;
 import java.util.Date;
 import java.util.Set;
