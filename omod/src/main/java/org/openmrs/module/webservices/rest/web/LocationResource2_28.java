@@ -34,7 +34,7 @@ import io.swagger.models.properties.ArrayProperty;
 import io.swagger.models.properties.RefProperty;
 import io.swagger.models.properties.StringProperty;
 
-@Resource(name = RestConstants.VERSION_1 + "/getlocationForEnterpriseId", supportedClass = Location.class, supportedOpenmrsVersions = "2.3.0")
+@Resource(name = RestConstants.VERSION_1 + "/getlocationforenterpriseid", supportedClass = Location.class, supportedOpenmrsVersions = "2.3.0")
 public class LocationResource2_28 extends MetadataDelegatingCrudResource<Location> {
 	/**
 	 * @see DelegatingCrudResource#getRepresentationDescription(Representation)
