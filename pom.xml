@@ -46,7 +46,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<openmrs.version>2.3.0</openmrs.version>
 		<openmrs.legacyui.version>1.5.0</openmrs.legacyui.version>
-		<java.version>1.6</java.version>
+		<metadatamappingVersion>1.3.4</metadatamappingVersion>
+		<java.version>1.8</java.version>
 
 		<MODULE_ID>${project.parent.artifactId}</MODULE_ID>
 		<MODULE_NAME>${project.name}</MODULE_NAME>
@@ -143,6 +144,12 @@
 			    <version>3.0.1</version>
 			    <scope>provided</scope>
 			</dependency>
+			<dependency>
+			<groupId>org.openmrs.module</groupId>
+			<artifactId>metadatamapping-api</artifactId>
+			<version>${metadatamappingVersion}</version>
+			<scope>provided</scope>
+		</dependency>
 			
 		</dependencies>
 	</dependencyManagement>

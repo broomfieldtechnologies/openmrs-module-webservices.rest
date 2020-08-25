@@ -84,5 +84,4 @@ public class ValidateUtil {
 		exceptionMessage += StringUtils.join(uniqueErrorMessages, ", ");
 		return exceptionMessage;
 	}
-	
 }
