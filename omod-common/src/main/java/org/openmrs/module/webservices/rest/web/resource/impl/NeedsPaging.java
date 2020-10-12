@@ -9,6 +9,7 @@
  */
 package org.openmrs.module.webservices.rest.web.resource.impl;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.openmrs.module.webservices.rest.web.RequestContext;
@@ -24,10 +25,12 @@ import org.openmrs.module.webservices.rest.web.resource.api.Searchable;
  */
 public class NeedsPaging<T> extends BasePageableResult<T> {
 	
-	private List<T> unpagedResults;
+	private List<T> unpagedResults = new ArrayList<T>();
 	
 	public NeedsPaging(List<T> unpagedResults, RequestContext context) {
-		this.unpagedResults = unpagedResults;
+		if (unpagedResults != null) {
+			this.unpagedResults = unpagedResults;
+		}
 		this.context = context;
 	}
 	
