@@ -40,8 +40,8 @@ import io.swagger.models.properties.StringProperty;
  * {@link Resource} for Provider, supporting standard CRUD operations
  */
 @Resource(name = RestConstants.VERSION_1
-        + "/providerbyenterprise", supportedClass = Provider.class, supportedOpenmrsVersions = { "1.9.*", "1.10.*",
-                "1.11.*", "1.12.*", "2.0.*", "2.1.*", "2.2.*", "2.3.*", "2.4.*" })
+        + "/providerbyenterprise", supportedClass = Provider.class, supportedOpenmrsVersions = { "1.9.*", "1.10.*", "1.11.*",
+                "1.12.*", "2.0.*", "2.1.*", "2.2.*", "2.3.*", "2.4.*" })
 public class ProviderResource2_28 extends MetadataDelegatingCrudResource<Provider> {
 	
 	public ProviderResource2_28() {
@@ -225,8 +225,7 @@ public class ProviderResource2_28 extends MetadataDelegatingCrudResource<Provide
 	 */
 	@Override
 	protected NeedsPaging<Provider> doGetAll(RequestContext context) throws ResponseException {
-		return new NeedsPaging<Provider>(Context.getProviderService().getAllProviders(context.getIncludeAll()),
-		        context);
+		return new NeedsPaging<Provider>(Context.getProviderService().getAllProviders(context.getIncludeAll()), context);
 	}
 	
 	/**
